@@ -39,20 +39,14 @@ The agent autonomously decides whether to search, which URLs to extract, and how
 │   ├── README.md
 │   ├── 01_setup.sql                  # Network rules, secrets, integration
 │   ├── 02_create_udtf.sql            # The nimble_enrich() UDTF
-│   ├── 03_example_usage.sql          # Example enrichment queries
-│   └── 04_cleanup.sql                # Teardown script
+│   └── 03_example_usage.sql          # Example enrichment queries
 │
 ├── databricks/                       # Databricks UDF setup & usage
 │   ├── README.md
-│   ├── 01_setup_and_udf.py           # Install deps + register UDF
-│   └── 02_example_usage.py           # Example enrichment queries
-│
-├── pricing-intelligence-demo/        # Full end-to-end demo (blog post)
-│   ├── README.md                     # Demo walkthrough & narrative
-│   ├── 01_warehouse_tables.sql       # Enterprise warehouse (14 tables)
-│   ├── 02_enrichment_pipeline.sql    # Cross-join + UDTF enrichment
-│   ├── 03_analysis_queries.sql       # Showcase queries
-│   └── images/                       # Screenshots from Upriver platform
+│   ├── 01_setup_and_udf.ipynb        # Notebook: install deps + register UDF
+│   ├── 01_setup_and_udf.py           # Same as above in plain Python
+│   ├── 02_example_usage.ipynb        # Notebook: example enrichment queries
+│   └── 02_example_usage.py           # Same as above in plain Python
 │
 └── README.md                         # This file
 ```
