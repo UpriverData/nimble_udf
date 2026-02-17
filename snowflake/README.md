@@ -8,13 +8,13 @@ A Snowflake User-Defined Table Function (UDTF) that uses a LangChain agent with 
 ┌───────────────┐    ┌────────────────────────────────────────────┐
 │  Your SQL     │    │           Snowflake UDTF                   │
 │  Query        │───▶│  ┌──────────────────────────────────────┐  │
-│               │    │  │  Python Handler (NimbleEnrichHandler) │  │
+│               │    │  │  Python Handler (NimbleEnrichHandler)│  │
 │  SELECT ...   │    │  │                                      │  │
 │  FROM t,      │    │  │  process() → collects rows           │  │
-│  TABLE(       │    │  │  end_partition() → runs agent         │  │
-│    nimble_    │    │  │    ├─ NimbleSearchTool                │  │
-│    enrich()  │    │  │    ├─ NimbleExtractTool               │  │
-│  )            │    │  │    └─ Claude (Anthropic API)          │  │
+│  TABLE(       │    │  │  end_partition() → runs agent        │  │
+│    nimble_    │    │  │    ├─ NimbleSearchTool               │  │
+│    enrich()   │    │  │    ├─ NimbleExtractTool              │  │
+│  )            │    │  │    └─ Claude (Anthropic API)         │  │
 │               │◀───│  │  yields (input, enriched) per row    │  │
 └───────────────┘    │  └──────────────────────────────────────┘  │
                      └────────────────────────────────────────────┘

@@ -5,17 +5,17 @@ A **Unity Catalog governed** Python UDF that uses a LangChain agent with [Nimble
 ## Architecture
 
 ```
-┌───────────────────┐    ┌──────────────────────────────────────┐
-│  Any SQL client   │    │  catalog.schema.nimble_enrich()       │
-│                   │    │  catalog.schema.nimble_enrich_anthropic()
-│  SQL Warehouse    │───▶│                                      │
-│  Notebook         │    │  LangChain Agent                     │
-│  Dashboard        │    │    ├─ NimbleSearchTool               │
-│  Scheduled Job    │◀───│    ├─ NimbleExtractTool              │
-│                   │    │    └─ ChatDatabricks or ChatAnthropic│
-│  Returns JSON     │    │                                      │
-└───────────────────┘    │  Unity Catalog governed              │
-                         └──────────────────────────────────────┘
+┌───────────────────┐    ┌───────────────────────────────────────────┐
+│  Any SQL client   │    │  catalog.schema.nimble_enrich()           │
+│                   │    │  catalog.schema.nimble_enrich_anthropic() │
+│  SQL Warehouse    │───▶│                                           │
+│  Notebook         │    │  LangChain Agent                          │
+│  Dashboard        │    │    ├─ NimbleSearchTool                    │
+│  Scheduled Job    │◀───│    ├─ NimbleExtractTool                   │
+│                   │    │    └─ ChatDatabricks or ChatAnthropic     │
+│  Returns JSON     │    │                                           │
+└───────────────────┘    │  Unity Catalog governed                   │
+                         └───────────────────────────────────────────┘
 ```
 
 ## Prerequisites

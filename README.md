@@ -12,11 +12,11 @@ This repository provides everything you need to deploy a **Nimble enrichment fun
 
 ```
 ┌─────────────────┐      ┌──────────────────┐      ┌─────────────────┐
-│  Your Warehouse │      │  LangChain Agent  │      │   Nimble API    │
-│  (Snowflake /   │─────▶│  (Claude + tools) │─────▶│  Search &       │
-│   Databricks)   │      │                    │      │  Extract        │
-│                 │◀─────│  Parses & returns  │◀─────│  Live web data  │
-│  nimble_enrich()│      │  structured JSON   │      │                 │
+│  Your Warehouse │      │  LangChain Agent │      │   Nimble API    │
+│  (Snowflake /   │─────▶│  (Claude + tools)│─────▶│  Search &       │
+│   Databricks)   │      │                  │      │  Extract        │
+│                 │◀─────│  Parses & returns│◀─────│  Live web data  │
+│  nimble_enrich()│      │  structured JSON │      │                 │
 └─────────────────┘      └──────────────────┘      └─────────────────┘
 ```
 
