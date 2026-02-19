@@ -1,10 +1,12 @@
 # Real-Time Data Enrichment with Nimble Agents
 
-Build AI-powered data enrichment pipelines that bring live web data into your data warehouse using [Nimble's](https://nimbleway.com) search and extraction tools, powered by LangChain agents.
+Build AI-powered data enrichment pipelines that bring live web data into your data warehouse using [Upriver's](https://upriverdata.com) Autonomous Data Engineer [Nimble's](https://nimbleway.com) search and extraction tools, powered by LangChain agents.
 
 This repository provides everything you need to deploy a **Nimble enrichment function** in your data warehouse and call it from SQL. An AI agent uses Nimble's Web Search and Content Extraction APIs to find and return structured data for any entity — products, companies, people, or anything else on the web.
 
-> **Companion blog post:** [Building Real-Time Pricing Intelligence in Snowflake with Upriver + Nimble](https://upriver.com/blog/pricing-intelligence-nimble)
+> **Companion blog post:** [Building Real-Time Pricing Intelligence in Snowflake with Upriver + Nimble](https://upriverdata.com/blog/pricing-intelligence-nimble)
+
+![Upriver + Nimble UDF demo](pricing-pipeline-demo/images/upriver_nimble_udf.png)
 
 ![Upriver + Nimble UDF demo](pricing-pipeline-demo/images/upriver_nimble_udf.png)
 
@@ -115,7 +117,7 @@ See the [demo README](pricing-pipeline-demo/README.md) for the video walkthrough
 
 ## About
 
-Built by [Upriver](https://upriver.com) and [Nimble](https://nimbleway.com).
+Built by [Upriver](https://upriverdata.com) and [Nimble](https://nimbleway.com).
 
 - **Upriver** — AI-powered data pipeline builder that understands your warehouse and autonomously constructs enrichment pipelines
 - **Nimble** — Real-time web data API providing search, extraction, and structured web intelligence
