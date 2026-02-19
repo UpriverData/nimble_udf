@@ -8,8 +8,6 @@ This repository provides everything you need to deploy a **Nimble enrichment fun
 
 ![Upriver + Nimble UDF demo](pricing-pipeline-demo/images/upriver_nimble_udf.png)
 
-![Upriver + Nimble UDF demo](pricing-pipeline-demo/images/upriver_nimble_udf.png)
-
 ---
 
 ## How It Works
