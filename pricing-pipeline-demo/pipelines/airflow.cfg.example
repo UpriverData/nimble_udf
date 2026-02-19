@@ -1,0 +1,19 @@
+# =============================================================================
+# Airflow Connection Configuration (Example)
+# =============================================================================
+# Add this connection in the Airflow UI (Admin > Connections) or via CLI:
+#
+# airflow connections add snowflake_enterprise_dw \
+#     --conn-type snowflake \
+#     --conn-login <your_user> \
+#     --conn-password <your_password> \
+#     --conn-schema RAW \
+#     --conn-extra '{
+#         "account": "<your_account>",
+#         "warehouse": "TRANSFORM_WH",
+#         "database": "ENTERPRISE_DW",
+#         "role": "SYSADMIN",
+#         "authenticator": "snowflake"
+#     }'
+#
+# =============================================================================
